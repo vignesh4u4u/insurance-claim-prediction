@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver insurance claim prediction</title>
+</head>
+<body>
+    <h2 style="background-color:yellow;text-align:center;font-size:20px">Driver Insurance Claim Prediction</h2><br>
+    <center>
+    <img src="https://www.xenonstack.com/hubfs/xenonstack-insurance-claim-prediction-using-ml-models.png" width="300" height="200">
+    </center>
+<form action="/predict" method="POST">
+    <label style="color:blue" for="feature1">feature1</label>
+        <input type="text" name="feature1" placeholder="feature1 value" id="feature1"><b>{{feature1}}</b>
+    <label style="color:blue" for="feature2">feature2</label>
+        <input type="text" name="feature2" placeholder="feature2 value" id="feature2"><b>{{feature2}}</b>
+     <div><br>
+        class: <b>{{result}}</b><br>
+        </div><br>
+        <div>
+        <input type="submit" value="predict">
+        </div>
+
+</form>
+</body>
+</html>
